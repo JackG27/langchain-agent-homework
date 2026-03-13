@@ -20,9 +20,14 @@ load_dotenv()
 
 
 def get_llm():
-    from langchain_ollama import ChatOllama
-    print("✅ Using Ollama (llama3.2) — running locally!")
-    return ChatOllama(model="llama3.2", temperature=0)
+    if os.getenv("OPENAI_API_KEY"):
+        from langchain_openai import ChatOpenAI
+        print("✅ Using OpenAI GPT-4o")
+        return ChatOpenAI(model="gpt-4o", temperature=0)
+    else:
+        from langchain_ollama import ChatOllama
+        print("✅ Using Ollama (llama3.2) — running locally!")
+        return ChatOllama(model="llama3.2", temperature=0)
 
 
 from langchain_core.tools import tool
