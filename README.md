@@ -26,7 +26,8 @@ ARIA (Advanced Research & Information Assistant) is an AI-powered chatbot built 
 ### Prerequisites
 - Python 3.10+
 - Git
-- Ollama installed from https://ollama.com
+- Ollama installed from https://ollama.com (free, no API key needed)
+- OR an OpenAI API key from https://platform.openai.com (paid)
 
 ### Step 1 — Clone the repo
 ```
@@ -107,6 +108,7 @@ The most interesting thing I learned was the ReAct (Reason + Act) pattern — th
 
 - LangChain — Tool definitions and LLM wrappers
 - LangGraph — create_react_agent and MemorySaver
-- Ollama + Llama 3.2 — Free local AI, no API key needed
+- Ollama + Llama 3.2 — Free local AI, no API key needed (fallback)
+- OpenAI GPT-4o — Paid option, just add your key to .env
 - wttr.in — Free weather API
 - Wikipedia API — Free encyclopedia search
