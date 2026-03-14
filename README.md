@@ -1,4 +1,4 @@
-# 🤖 ARIA — Personal Research Assistant Agent
+# 🐼 ARIA — Personal Research Assistant Agent
 
 ARIA (Advanced Research & Information Assistant) is an AI-powered chatbot built with LangChain and LangGraph. It uses the ReAct pattern (Reason + Act) to think through your questions, pick the right tool, and give clear answers. ARIA remembers everything you say during a conversation and streams its thinking in real time.
 
